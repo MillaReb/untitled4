@@ -8,16 +8,15 @@ public class TestConverter {
 
     @Test
 
-    public void testConvertAToEnglish(){
-        Converter1 converter = new Converter1(); //information som behovs för att utföra testfallet
+   public void testConvertAToEnglish(){
+        Converter1 converter = new Converter1(); // objekt för konvertering
        String testdata = ".-";
 
-       String actual = converter.storBokstavToEnglish(testdata);//hämtar den faktiskt information ifrån vår kod och sparar i actual
-       String expected = "A";  //förväntad resultat hämtas ifrån vår kod
-
+       //Skickar in testdata till konverteringsklassen och på så sätt utförs konverteringen
+       String actual = converter.storBokstavToEnglish(testdata);//
+       String expected = "A";
+        //förväntas att actual = expected
        assertEquals(expected, actual); // här jämför vi expected och actual med assertEquals
-
-
     }
     @Test
     public void testConvertWordToMorse(){
