@@ -19,16 +19,15 @@ public class TestConverter {
        assertEquals(expected, actual); // här jämför vi expected och actual med assertEquals
     }
     @Test
-    public void testConvertWordToMorse(){
+    public void testConvertWordToEnglish(){
         Converter1 converter = new Converter1();
         String test = ".... . .-.. .-.. ---";
 
-        String actual = converter.convertWordToMorse(test);
+        String actual = converter.convertWordToEnglish(test);
         String expected = "HELLO";
 
         assertEquals(expected, actual);
     }
-
 
     @Test
 
